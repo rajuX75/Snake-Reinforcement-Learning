@@ -1,0 +1,27 @@
+2025-03-02 16:32:09,662 [INFO] DQNAgent initialized. Using device: cpu
+2025-03-02 16:32:09,662 [INFO] Network architecture: DuelingDQN(
+  (feature_layers): ModuleList(
+    (0): Linear(in_features=24, out_features=128, bias=True)
+    (1): Linear(in_features=128, out_features=128, bias=True)
+  )
+  (value_stream): Sequential(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+    (1): LeakyReLU(negative_slope=0.1)
+    (2): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (advantage_stream): Sequential(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+    (1): LeakyReLU(negative_slope=0.1)
+    (2): Linear(in_features=64, out_features=4, bias=True)
+  )
+)
+2025-03-02 16:32:09,663 [INFO] Using Double DQN: True
+2025-03-02 16:32:09,663 [INFO] Using Dueling DQN: True
+2025-03-02 16:32:09,663 [INFO] Using Prioritized Replay: True
+2025-03-02 16:32:10,250 [INFO] Model loaded from models\snake_dqn_ep1229_score72_20250302_153403.pt
+2025-03-02 16:32:57,557 [INFO] Episode 1 finished with score 58
+2025-03-02 16:33:28,766 [INFO] Episode 2 finished with score 52
+2025-03-02 16:33:41,529 [INFO] Episode 3 finished with score 27
+2025-03-02 16:34:01,385 [INFO] Episode 4 finished with score 34
+2025-03-02 16:34:14,432 [INFO] Episode 5 finished with score 22
+2025-03-02 16:34:23,704 [INFO] Episode 6 finished with score 18
