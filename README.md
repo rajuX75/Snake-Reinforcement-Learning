@@ -19,8 +19,8 @@ This project implements a reinforcement learning agent that learns to play the c
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/yourusername/snake-rl.git
-   cd snake-rl
+   git clone https://github.com/rajuX75/Snake-Reinforcement-Learning.git
+   cd Snake-Reinforcement-Learning
    ```
 
 2. Create and activate a virtual environment (optional but recommended)
@@ -60,7 +60,7 @@ python main.py --mode train --episodes 2000 --fps 120 --speed 1 --save_freq 200
 ### Playing with a trained agent
 
 ```bash
-python main.py --mode play --load models/snake_dqn_best.pt
+python main.py --mode play --load models\snake_dqn_ep1229_score72_20250302_153403.pt
 ```
 
 ### Command-line Options
