@@ -18,6 +18,8 @@ class GameParams:
     WIDTH = GRID_WIDTH * CELL_SIZE
     HEIGHT = GRID_HEIGHT * CELL_SIZE
 
+    BLOCK_SIZE = CELL_SIZE
+
     # Font size
     FONT_SIZE = 24
 
@@ -38,6 +40,11 @@ class GameParams:
 
     # Calculate state size based on parameters
     STATE_SIZE = 15 + (LOOK_AHEAD * 3)  # Base features + look ahead features
+
+    STEP_REWARD = 0.1
+    COLLISION_REWARD = -1.0
+    FOOD_REWARD = 1.0
+    STUCK_REWARD = -0.1
 
 
 class DQNParams:
