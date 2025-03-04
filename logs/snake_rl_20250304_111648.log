@@ -1,0 +1,150 @@
+2025-03-04 11:16:48,500 [INFO] Running in train mode
+2025-03-04 11:16:48,501 [INFO] Configuration: episodes=1000, render=False, render_freq=10, save_freq=500
+2025-03-04 11:16:48,501 [INFO] DQN settings: double_dqn=True, dueling_dqn=True, prioritized_replay=True, hidden_size=128
+2025-03-04 11:16:48,501 [INFO] SnakeGameEnv initialized with render_mode=none, fps=60, snake_speed=5
+2025-03-04 11:16:48,501 [INFO] State size: 15, Action size: 4
+2025-03-04 11:16:48,501 [INFO] Environment created with state_size=15, action_size=4
+2025-03-04 11:16:50,137 [INFO] DQNAgent initialized. Using device: cpu
+2025-03-04 11:16:50,138 [INFO] Network architecture: DuelingDQN(
+  (feature_layers): ModuleList(
+    (0): Linear(in_features=15, out_features=128, bias=True)
+    (1): Linear(in_features=128, out_features=128, bias=True)
+  )
+  (value_stream): Sequential(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+    (1): LeakyReLU(negative_slope=0.1)
+    (2): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (advantage_stream): Sequential(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+    (1): LeakyReLU(negative_slope=0.1)
+    (2): Linear(in_features=64, out_features=4, bias=True)
+  )
+)
+2025-03-04 11:16:50,138 [INFO] Using Double DQN: True
+2025-03-04 11:16:50,138 [INFO] Using Dueling DQN: True
+2025-03-04 11:16:50,139 [INFO] Using Prioritized Replay: True
+2025-03-04 11:16:50,139 [INFO] Starting training for 1000 episodes
+2025-03-04 11:16:50,139 [INFO] Starting training...
+2025-03-04 11:16:50,140 [INFO] Training for 1000 episodes
+2025-03-04 11:16:52,034 [INFO] Episode: 10/1000, Score: 0, Avg Score: 0.00, Steps: 54, Epsilon: 0.9511, Loss: 0.412894, Time: 1.89s
+2025-03-04 11:16:53,875 [INFO] Model saved to models\snake_dqn_ep16_score3_20250304_111648.pt
+2025-03-04 11:16:53,876 [INFO] New best score: 3 (Episode 16)
+2025-03-04 11:16:54,607 [INFO] Episode: 20/1000, Score: 0, Avg Score: 0.15, Steps: 49, Epsilon: 0.9046, Loss: 0.342989, Time: 4.47s
+2025-03-04 11:16:57,091 [INFO] Episode: 30/1000, Score: 0, Avg Score: 0.13, Steps: 35, Epsilon: 0.8604, Loss: 0.247652, Time: 6.95s
+2025-03-04 11:16:59,194 [INFO] Episode: 40/1000, Score: 0, Avg Score: 0.12, Steps: 23, Epsilon: 0.8183, Loss: 0.169216, Time: 9.05s
+2025-03-04 11:17:01,873 [INFO] Episode: 50/1000, Score: 1, Avg Score: 0.12, Steps: 108, Epsilon: 0.7783, Loss: 0.080286, Time: 11.73s
+2025-03-04 11:17:04,993 [INFO] Episode: 60/1000, Score: 2, Avg Score: 0.18, Steps: 132, Epsilon: 0.7403, Loss: 0.045472, Time: 14.85s
+2025-03-04 11:17:07,701 [INFO] Episode: 70/1000, Score: 0, Avg Score: 0.20, Steps: 12, Epsilon: 0.7041, Loss: 0.043037, Time: 17.56s
+2025-03-04 11:17:10,559 [INFO] Episode: 80/1000, Score: 0, Avg Score: 0.21, Steps: 38, Epsilon: 0.6696, Loss: 0.039872, Time: 20.42s
+2025-03-04 11:17:13,734 [INFO] Episode: 90/1000, Score: 0, Avg Score: 0.23, Steps: 41, Epsilon: 0.6369, Loss: 0.039675, Time: 23.59s
+2025-03-04 11:17:16,877 [INFO] Episode: 100/1000, Score: 0, Avg Score: 0.30, Steps: 80, Epsilon: 0.6058, Loss: 0.029167, Time: 26.74s
+2025-03-04 11:17:20,065 [INFO] Episode: 110/1000, Score: 5, Avg Score: 0.43, Steps: 149, Epsilon: 0.5762, Loss: 0.034852, Time: 29.92s
+2025-03-04 11:17:20,074 [INFO] Model saved to models\snake_dqn_ep110_score5_20250304_111648.pt
+2025-03-04 11:17:20,074 [INFO] New best score: 5 (Episode 110)
+2025-03-04 11:17:22,460 [INFO] Episode: 120/1000, Score: 0, Avg Score: 0.52, Steps: 25, Epsilon: 0.5480, Loss: 0.031692, Time: 32.32s
+2025-03-04 11:17:25,587 [INFO] Episode: 130/1000, Score: 1, Avg Score: 0.60, Steps: 50, Epsilon: 0.5212, Loss: 0.026438, Time: 35.45s
+2025-03-04 11:17:29,063 [INFO] Episode: 140/1000, Score: 0, Avg Score: 0.72, Steps: 100, Epsilon: 0.4957, Loss: 0.027477, Time: 38.92s
+2025-03-04 11:17:31,639 [INFO] Episode: 150/1000, Score: 0, Avg Score: 0.82, Steps: 42, Epsilon: 0.4715, Loss: 0.026099, Time: 41.50s
+2025-03-04 11:17:34,024 [INFO] Episode: 160/1000, Score: 3, Avg Score: 0.85, Steps: 121, Epsilon: 0.4484, Loss: 0.028263, Time: 43.88s
+2025-03-04 11:17:34,813 [INFO] Model saved to models\snake_dqn_ep162_score6_20250304_111648.pt
+2025-03-04 11:17:34,814 [INFO] New best score: 6 (Episode 162)
+2025-03-04 11:17:36,062 [INFO] Episode: 170/1000, Score: 0, Avg Score: 0.91, Steps: 23, Epsilon: 0.4265, Loss: 0.026909, Time: 45.92s
+2025-03-04 11:17:37,904 [INFO] Episode: 180/1000, Score: 2, Avg Score: 0.91, Steps: 75, Epsilon: 0.4057, Loss: 0.028467, Time: 47.76s
+2025-03-04 11:17:39,658 [INFO] Episode: 190/1000, Score: 1, Avg Score: 0.90, Steps: 17, Epsilon: 0.3858, Loss: 0.032696, Time: 49.52s
+2025-03-04 11:17:40,818 [INFO] Episode: 200/1000, Score: 0, Avg Score: 0.81, Steps: 27, Epsilon: 0.3670, Loss: 0.031293, Time: 50.68s
+2025-03-04 11:17:42,524 [INFO] Episode: 210/1000, Score: 1, Avg Score: 0.69, Steps: 23, Epsilon: 0.3490, Loss: 0.027070, Time: 52.38s
+2025-03-04 11:17:43,886 [INFO] Episode: 220/1000, Score: 0, Avg Score: 0.57, Steps: 23, Epsilon: 0.3320, Loss: 0.026777, Time: 53.75s
+2025-03-04 11:17:44,976 [INFO] Episode: 230/1000, Score: 0, Avg Score: 0.49, Steps: 17, Epsilon: 0.3157, Loss: 0.031668, Time: 54.84s
+2025-03-04 11:17:46,491 [INFO] Episode: 240/1000, Score: 0, Avg Score: 0.37, Steps: 18, Epsilon: 0.3003, Loss: 0.038140, Time: 56.35s
+2025-03-04 11:17:47,755 [INFO] Episode: 250/1000, Score: 1, Avg Score: 0.27, Steps: 69, Epsilon: 0.2856, Loss: 0.035003, Time: 57.62s
+2025-03-04 11:17:49,486 [INFO] Episode: 260/1000, Score: 0, Avg Score: 0.19, Steps: 15, Epsilon: 0.2716, Loss: 0.029993, Time: 59.35s
+2025-03-04 11:17:50,800 [INFO] Episode: 270/1000, Score: 0, Avg Score: 0.13, Steps: 28, Epsilon: 0.2584, Loss: 0.034257, Time: 60.66s
+2025-03-04 11:17:52,579 [INFO] Episode: 280/1000, Score: 0, Avg Score: 0.10, Steps: 76, Epsilon: 0.2457, Loss: 0.034101, Time: 62.44s
+2025-03-04 11:17:54,753 [INFO] Episode: 290/1000, Score: 0, Avg Score: 0.08, Steps: 38, Epsilon: 0.2337, Loss: 0.028175, Time: 64.61s
+2025-03-04 11:17:56,679 [INFO] Episode: 300/1000, Score: 0, Avg Score: 0.08, Steps: 16, Epsilon: 0.2223, Loss: 0.023730, Time: 66.54s
+2025-03-04 11:17:58,586 [INFO] Episode: 310/1000, Score: 0, Avg Score: 0.08, Steps: 16, Epsilon: 0.2114, Loss: 0.016292, Time: 68.45s
+2025-03-04 11:18:00,233 [INFO] Episode: 320/1000, Score: 0, Avg Score: 0.08, Steps: 30, Epsilon: 0.2011, Loss: 0.015930, Time: 70.09s
+2025-03-04 11:18:03,553 [INFO] Episode: 330/1000, Score: 0, Avg Score: 0.16, Steps: 31, Epsilon: 0.1913, Loss: 0.013863, Time: 73.41s
+2025-03-04 11:18:05,484 [INFO] Episode: 340/1000, Score: 0, Avg Score: 0.17, Steps: 44, Epsilon: 0.1819, Loss: 0.016364, Time: 75.34s
+2025-03-04 11:18:07,260 [INFO] Episode: 350/1000, Score: 1, Avg Score: 0.17, Steps: 16, Epsilon: 0.1730, Loss: 0.020362, Time: 77.12s
+2025-03-04 11:18:09,285 [INFO] Episode: 360/1000, Score: 0, Avg Score: 0.19, Steps: 32, Epsilon: 0.1646, Loss: 0.017033, Time: 79.15s
+2025-03-04 11:18:12,110 [INFO] Episode: 370/1000, Score: 0, Avg Score: 0.17, Steps: 64, Epsilon: 0.1565, Loss: 0.012635, Time: 81.97s
+2025-03-04 11:18:13,435 [INFO] Model saved to models\snake_dqn_ep372_score7_20250304_111648.pt
+2025-03-04 11:18:13,436 [INFO] New best score: 7 (Episode 372)
+2025-03-04 11:18:15,535 [INFO] Episode: 380/1000, Score: 1, Avg Score: 0.33, Steps: 39, Epsilon: 0.1489, Loss: 0.010724, Time: 85.40s
+2025-03-04 11:18:17,470 [INFO] Model saved to models\snake_dqn_ep383_score11_20250304_111648.pt
+2025-03-04 11:18:17,470 [INFO] New best score: 11 (Episode 383)
+2025-03-04 11:18:19,114 [INFO] Episode: 390/1000, Score: 0, Avg Score: 0.48, Steps: 28, Epsilon: 0.1416, Loss: 0.013087, Time: 88.97s
+2025-03-04 11:18:23,148 [INFO] Episode: 400/1000, Score: 9, Avg Score: 0.66, Steps: 188, Epsilon: 0.1347, Loss: 0.009808, Time: 93.01s
+2025-03-04 11:18:26,179 [INFO] Episode: 410/1000, Score: 0, Avg Score: 0.71, Steps: 22, Epsilon: 0.1281, Loss: 0.013505, Time: 96.04s
+2025-03-04 11:18:30,607 [INFO] Episode: 420/1000, Score: 0, Avg Score: 0.80, Steps: 17, Epsilon: 0.1218, Loss: 0.010030, Time: 100.47s
+2025-03-04 11:18:33,574 [INFO] Episode: 430/1000, Score: 0, Avg Score: 0.76, Steps: 35, Epsilon: 0.1159, Loss: 0.008386, Time: 103.43s
+2025-03-04 11:18:36,320 [INFO] Episode: 440/1000, Score: 0, Avg Score: 0.75, Steps: 35, Epsilon: 0.1102, Loss: 0.011282, Time: 106.18s
+2025-03-04 11:18:40,226 [INFO] Episode: 450/1000, Score: 0, Avg Score: 0.81, Steps: 23, Epsilon: 0.1048, Loss: 0.008221, Time: 110.09s
+2025-03-04 11:18:44,172 [INFO] Episode: 460/1000, Score: 0, Avg Score: 0.81, Steps: 51, Epsilon: 0.0997, Loss: 0.011456, Time: 114.03s
+2025-03-04 11:18:50,820 [INFO] Episode: 470/1000, Score: 0, Avg Score: 0.96, Steps: 43, Epsilon: 0.0948, Loss: 0.011749, Time: 120.68s
+2025-03-04 11:18:58,714 [INFO] Episode: 480/1000, Score: 2, Avg Score: 1.25, Steps: 100, Epsilon: 0.0902, Loss: 0.010826, Time: 128.57s
+2025-03-04 11:19:03,302 [INFO] Episode: 490/1000, Score: 6, Avg Score: 1.29, Steps: 185, Epsilon: 0.0858, Loss: 0.009811, Time: 133.16s
+2025-03-04 11:19:08,106 [INFO] Episode: 500/1000, Score: 1, Avg Score: 1.40, Steps: 19, Epsilon: 0.0816, Loss: 0.022278, Time: 137.97s
+2025-03-04 11:19:08,124 [INFO] Model saved to models\snake_dqn_ep500_score1_20250304_111648.pt
+2025-03-04 11:19:11,487 [INFO] Model saved to models\snake_dqn_ep504_score12_20250304_111648.pt
+2025-03-04 11:19:11,487 [INFO] New best score: 12 (Episode 504)
+2025-03-04 11:19:15,336 [INFO] Model saved to models\snake_dqn_ep506_score21_20250304_111648.pt
+2025-03-04 11:19:15,337 [INFO] New best score: 21 (Episode 506)
+2025-03-04 11:19:18,022 [INFO] Episode: 510/1000, Score: 3, Avg Score: 2.03, Steps: 73, Epsilon: 0.0776, Loss: 0.012796, Time: 147.88s
+2025-03-04 11:19:24,521 [INFO] Episode: 520/1000, Score: 11, Avg Score: 2.31, Steps: 189, Epsilon: 0.0738, Loss: 0.007100, Time: 154.38s
+2025-03-04 11:19:31,289 [INFO] Episode: 530/1000, Score: 0, Avg Score: 2.73, Steps: 55, Epsilon: 0.0702, Loss: 0.007860, Time: 161.15s
+2025-03-04 11:19:39,770 [INFO] Episode: 540/1000, Score: 15, Avg Score: 3.29, Steps: 497, Epsilon: 0.0668, Loss: 0.007756, Time: 169.63s
+2025-03-04 11:19:50,287 [INFO] Episode: 550/1000, Score: 3, Avg Score: 4.00, Steps: 37, Epsilon: 0.0635, Loss: 0.006800, Time: 180.15s
+2025-03-04 11:19:58,480 [INFO] Episode: 560/1000, Score: 3, Avg Score: 4.63, Steps: 51, Epsilon: 0.0604, Loss: 0.006077, Time: 188.34s
+2025-03-04 11:20:07,452 [INFO] Episode: 570/1000, Score: 13, Avg Score: 5.02, Steps: 176, Epsilon: 0.0574, Loss: 0.005875, Time: 197.31s
+2025-03-04 11:20:14,677 [INFO] Model saved to models\snake_dqn_ep575_score22_20250304_111648.pt
+2025-03-04 11:20:14,678 [INFO] New best score: 22 (Episode 575)
+2025-03-04 11:20:19,090 [INFO] Episode: 580/1000, Score: 13, Avg Score: 5.43, Steps: 189, Epsilon: 0.0546, Loss: 0.005620, Time: 208.95s
+2025-03-04 11:20:34,717 [INFO] Episode: 590/1000, Score: 0, Avg Score: 6.18, Steps: 36, Epsilon: 0.0520, Loss: 0.004629, Time: 224.58s
+2025-03-04 11:20:47,936 [INFO] Episode: 600/1000, Score: 33, Avg Score: 6.90, Steps: 599, Epsilon: 0.0494, Loss: 0.005558, Time: 237.80s
+2025-03-04 11:20:47,962 [INFO] Model saved to models\snake_dqn_ep600_score33_20250304_111648.pt
+2025-03-04 11:20:47,962 [INFO] New best score: 33 (Episode 600)
+2025-03-04 11:21:06,306 [INFO] Episode: 610/1000, Score: 4, Avg Score: 7.47, Steps: 57, Epsilon: 0.0470, Loss: 0.003977, Time: 256.17s
+2025-03-04 11:21:17,793 [INFO] Episode: 620/1000, Score: 6, Avg Score: 7.96, Steps: 96, Epsilon: 0.0447, Loss: 0.004502, Time: 267.65s
+2025-03-04 11:21:32,902 [INFO] Episode: 630/1000, Score: 7, Avg Score: 8.50, Steps: 181, Epsilon: 0.0425, Loss: 0.006463, Time: 282.76s
+2025-03-04 11:21:50,563 [INFO] Model saved to models\snake_dqn_ep639_score36_20250304_111648.pt
+2025-03-04 11:21:50,563 [INFO] New best score: 36 (Episode 639)
+2025-03-04 11:21:52,786 [INFO] Episode: 640/1000, Score: 21, Avg Score: 9.27, Steps: 282, Epsilon: 0.0404, Loss: 0.003978, Time: 302.65s
+2025-03-04 11:22:10,522 [INFO] Episode: 650/1000, Score: 1, Avg Score: 9.56, Steps: 22, Epsilon: 0.0385, Loss: 0.004773, Time: 320.38s
+2025-03-04 11:22:25,863 [INFO] Episode: 660/1000, Score: 16, Avg Score: 9.99, Steps: 287, Epsilon: 0.0366, Loss: 0.004031, Time: 335.72s
+2025-03-04 11:22:41,478 [INFO] Model saved to models\snake_dqn_ep666_score39_20250304_111648.pt
+2025-03-04 11:22:41,478 [INFO] New best score: 39 (Episode 666)
+2025-03-04 11:22:47,789 [INFO] Episode: 670/1000, Score: 20, Avg Score: 11.16, Steps: 264, Epsilon: 0.0348, Loss: 0.004719, Time: 357.65s
+2025-03-04 11:23:11,742 [INFO] Episode: 680/1000, Score: 26, Avg Score: 12.23, Steps: 381, Epsilon: 0.0331, Loss: 0.004298, Time: 381.60s
+2025-03-04 11:23:34,141 [INFO] Episode: 690/1000, Score: 21, Avg Score: 13.01, Steps: 316, Epsilon: 0.0315, Loss: 0.003604, Time: 404.00s
+2025-03-04 11:23:53,758 [INFO] Episode: 700/1000, Score: 44, Avg Score: 13.55, Steps: 568, Epsilon: 0.0299, Loss: 0.004062, Time: 423.62s
+2025-03-04 11:23:53,801 [INFO] Model saved to models\snake_dqn_ep700_score44_20250304_111648.pt
+2025-03-04 11:23:53,802 [INFO] New best score: 44 (Episode 700)
+2025-03-04 11:24:12,718 [INFO] Episode: 710/1000, Score: 16, Avg Score: 14.00, Steps: 307, Epsilon: 0.0285, Loss: 0.004351, Time: 442.58s
+2025-03-04 11:24:28,377 [INFO] Episode: 720/1000, Score: 17, Avg Score: 14.43, Steps: 345, Epsilon: 0.0271, Loss: 0.005824, Time: 458.24s
+2025-03-04 11:24:50,621 [INFO] Episode: 730/1000, Score: 4, Avg Score: 15.42, Steps: 43, Epsilon: 0.0258, Loss: 0.003597, Time: 480.48s
+2025-03-04 11:25:11,572 [INFO] Episode: 740/1000, Score: 5, Avg Score: 15.72, Steps: 82, Epsilon: 0.0245, Loss: 0.004609, Time: 501.43s
+2025-03-04 11:25:36,476 [INFO] Episode: 750/1000, Score: 33, Avg Score: 16.62, Steps: 517, Epsilon: 0.0233, Loss: 0.004787, Time: 526.34s
+2025-03-04 11:26:06,124 [INFO] Episode: 760/1000, Score: 15, Avg Score: 17.70, Steps: 289, Epsilon: 0.0222, Loss: 0.005057, Time: 555.98s
+2025-03-04 11:26:29,655 [INFO] Episode: 770/1000, Score: 4, Avg Score: 17.63, Steps: 54, Epsilon: 0.0211, Loss: 0.004080, Time: 579.52s
+2025-03-04 11:26:52,702 [INFO] Episode: 780/1000, Score: 26, Avg Score: 17.53, Steps: 506, Epsilon: 0.0200, Loss: 0.005662, Time: 602.56s
+2025-03-04 11:27:22,336 [INFO] Episode: 790/1000, Score: 27, Avg Score: 18.23, Steps: 391, Epsilon: 0.0191, Loss: 0.004889, Time: 632.20s
+2025-03-04 11:27:42,566 [INFO] Episode: 800/1000, Score: 11, Avg Score: 18.32, Steps: 181, Epsilon: 0.0181, Loss: 0.005098, Time: 652.43s
+2025-03-04 11:27:56,196 [INFO] Model saved to models\snake_dqn_ep806_score48_20250304_111648.pt
+2025-03-04 11:27:56,196 [INFO] New best score: 48 (Episode 806)
+2025-03-04 11:28:08,787 [INFO] Episode: 810/1000, Score: 27, Avg Score: 18.77, Steps: 351, Epsilon: 0.0172, Loss: 0.005265, Time: 678.65s
+2025-03-04 11:28:29,255 [INFO] Episode: 820/1000, Score: 7, Avg Score: 19.30, Steps: 112, Epsilon: 0.0164, Loss: 0.005485, Time: 699.12s
+2025-03-04 11:28:54,446 [INFO] Episode: 830/1000, Score: 21, Avg Score: 19.35, Steps: 339, Epsilon: 0.0156, Loss: 0.005715, Time: 724.31s
+2025-03-04 11:29:26,253 [INFO] Episode: 840/1000, Score: 23, Avg Score: 20.41, Steps: 307, Epsilon: 0.0148, Loss: 0.005440, Time: 756.11s
+2025-03-04 11:29:53,039 [INFO] Episode: 850/1000, Score: 32, Avg Score: 21.00, Steps: 369, Epsilon: 0.0141, Loss: 0.004851, Time: 782.90s
+2025-03-04 11:30:22,254 [INFO] Episode: 860/1000, Score: 15, Avg Score: 21.47, Steps: 233, Epsilon: 0.0134, Loss: 0.004887, Time: 812.11s
+2025-03-04 11:30:50,365 [INFO] Episode: 870/1000, Score: 32, Avg Score: 21.90, Steps: 530, Epsilon: 0.0128, Loss: 0.005476, Time: 840.23s
+2025-03-04 11:31:14,904 [INFO] Episode: 880/1000, Score: 17, Avg Score: 22.10, Steps: 285, Epsilon: 0.0121, Loss: 0.005686, Time: 864.76s
+2025-03-04 11:31:28,439 [INFO] Model saved to models\snake_dqn_ep883_score56_20250304_111648.pt
+2025-03-04 11:31:28,439 [INFO] New best score: 56 (Episode 883)
+2025-03-04 11:31:48,586 [INFO] Episode: 890/1000, Score: 19, Avg Score: 22.49, Steps: 301, Epsilon: 0.0115, Loss: 0.005218, Time: 898.45s
+2025-03-04 11:32:17,379 [INFO] Episode: 900/1000, Score: 22, Avg Score: 23.25, Steps: 299, Epsilon: 0.0110, Loss: 0.005819, Time: 927.24s
+2025-03-04 11:32:45,014 [INFO] Episode: 910/1000, Score: 25, Avg Score: 23.25, Steps: 428, Epsilon: 0.0104, Loss: 0.005725, Time: 954.87s
+2025-03-04 11:33:12,770 [INFO] Episode: 920/1000, Score: 42, Avg Score: 23.71, Steps: 718, Epsilon: 0.0100, Loss: 0.005568, Time: 982.63s
